@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A740862C1C34C12800F88638 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A740862B1C34C12800F88638 /* SettingsViewController.swift */; };
 		A7CC2BAB1C2390FA009C4150 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC2BAA1C2390FA009C4150 /* AppDelegate.swift */; };
 		A7CC2BAD1C2390FA009C4150 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CC2BAC1C2390FA009C4150 /* ViewController.swift */; };
 		A7CC2BB01C2390FA009C4150 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7CC2BAE1C2390FA009C4150 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A740862B1C34C12800F88638 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		A7CC2BA51C2390FA009C4150 /* CalcuTip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalcuTip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CC2BA91C2390FA009C4150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7CC2BAA1C2390FA009C4150 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		A7CC2BA71C2390FA009C4150 /* CalcuTip */ = {
 			isa = PBXGroup;
 			children = (
+				A740862B1C34C12800F88638 /* SettingsViewController.swift */,
 				A7CC2BAA1C2390FA009C4150 /* AppDelegate.swift */,
 				A7CC2BAC1C2390FA009C4150 /* ViewController.swift */,
 				A7CC2BAE1C2390FA009C4150 /* Main.storyboard */,
@@ -156,7 +159,9 @@
 		A7CC2B9D1C2390FA009C4150 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Vaibhav Sharma";
 				TargetAttributes = {
 					A7CC2BA41C2390FA009C4150 = {
@@ -214,6 +219,7 @@
 			files = (
 				A7CC2BAD1C2390FA009C4150 /* ViewController.swift in Sources */,
 				A7CC2BAB1C2390FA009C4150 /* AppDelegate.swift in Sources */,
+				A740862C1C34C12800F88638 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +281,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -340,7 +347,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CalcuTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharma.swift.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -350,7 +359,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CalcuTip/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharma.swift.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -368,6 +379,7 @@
 				);
 				INFOPLIST_FILE = CalcuTipTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharma.swift.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalcuTip.app/CalcuTip";
 			};
@@ -383,6 +395,7 @@
 				);
 				INFOPLIST_FILE = CalcuTipTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sharma.swift.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CalcuTip.app/CalcuTip";
 			};
@@ -407,6 +420,7 @@
 				A7CC2BC61C2390FB009C4150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A7CC2BC71C2390FB009C4150 /* Build configuration list for PBXNativeTarget "CalcuTipTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +429,7 @@
 				A7CC2BC91C2390FB009C4150 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
