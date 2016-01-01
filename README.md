@@ -33,6 +33,9 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
+    -Figuring out how animations work was a little bit challenging
+    -Designing the app (Don't think the design came out as nicely as I had hoped)
+    -figuring out how to make Swift and XCode work together in an efficient manner, as opposed to both separately.
 
 ## License
 
